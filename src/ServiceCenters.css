@@ -1,0 +1,24 @@
+/* .service-card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+} */
+
+.service-card-img {
+  height: 300px;
+  object-fit: cover;
+}
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+/* .card-text {
+  flex-grow: 1;
+} */
+
+/* .card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+} */

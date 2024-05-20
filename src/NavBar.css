@@ -1,0 +1,19 @@
+/* Navbar.css */
+
+.navbar-custom {
+    background-color: grey;
+}
+
+.nav-link-custom {
+    color: white !important;
+}
+
+.nav-dropdown-toggle-custom {
+    background-color: #0d6efd !important;
+    border-color: #0d6efd !important;
+    color: white !important;
+}
+
+.navbar-brand-custom {
+    color: white !important;
+}

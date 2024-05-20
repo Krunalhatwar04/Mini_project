@@ -1,0 +1,40 @@
+.mb-3{
+    width: 90%;
+}
+
+.division{
+    align-items: center;
+}
+.form{
+    align-content: center;
+    align-items: center;
+}
+
+.card-container{
+    margin-top: 80px;
+    width: 70%;
+    align-items: center;
+    height: 600px;
+    padding-top: 10px ;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    margin-left: 150px;
+}
+
+.card2{
+    margin-top: 80px;
+    width: 300px;
+    height: 600px;
+}
+
+
+
+
+
+
+
+
+
+
+
+

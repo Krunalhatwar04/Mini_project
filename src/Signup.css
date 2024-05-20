@@ -1,0 +1,17 @@
+.mini-login-container {
+    background-image: url('C:\Users\KRUNAL\Desktop\Mini-Project\mini\public\img1.png');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.login-button {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+.container {
+    text-align: left;
+  }

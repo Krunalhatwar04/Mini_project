@@ -1,0 +1,32 @@
+.parent-container {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    min-height: 100vh; 
+}
+
+/* .row {
+    margin-top: 60px;
+    text-align: right; 
+   
+} */
+
+.about {
+    margin-top: 40px;
+    text-align: center;
+}
+
+#connect {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.column {
+    margin-top: 20px;
+    text-align: center;
+   
+}
+
+.column p {
+    text-align: center;
+}
