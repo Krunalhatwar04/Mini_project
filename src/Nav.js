@@ -13,13 +13,18 @@ function NavBar() {
 
   const linkStyle = {
     color: 'white',
+    borderradius:'20px'
   };
 
   const dropdownToggleStyle = {
     backgroundColor: '#0d6efd',
     borderColor: '#0d6efd',
     color: 'white',
+    // borderRadius: '30px',
+    // padding: '5px 10px'
+    
   };
+  
 
   return (
     <Navbar expand="lg" style={navbarStyle}>
@@ -44,10 +49,10 @@ function NavBar() {
           </LinkContainer> */}
           </Nav>
           <Nav className="ms-auto">
-            <NavDropdown
+            <NavDropdown 
               title={<span style={linkStyle}>Login</span>}
               id="basic-nav-dropdown"
-              className="btn btn-primary"
+              className="btn btn-secondary"
               style={dropdownToggleStyle}
             >
               <LinkContainer to="/login/user">
@@ -59,7 +64,7 @@ function NavBar() {
              
               <NavDropdown.Divider />
             </NavDropdown>
-            <Button href="#" variant="primary" className="ms-2">Logout</Button>
+            {/* <Button href="#" variant="primary" className="ms-2">Logout</Button> */}
           </Nav>
         </Navbar.Collapse>
       </Container>

@@ -4,7 +4,7 @@ import { LinkContainer } from 'react-router-bootstrap';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-
+import { useNavigate } from 'react-router-dom';
 function Adminnav() {
   const navbarStyle = {
     backgroundColor: 'grey',
@@ -12,12 +12,24 @@ function Adminnav() {
 
   const linkStyle = {
     color: 'white',
+    borderradius:'20px'
   };
 
   const dropdownToggleStyle = {
     backgroundColor: '#0d6efd',
     borderColor: '#0d6efd',
     color: 'white',
+    borderRadius: '30px',
+    padding: '5px 10px'
+    
+  };
+  
+  const navigate = useNavigate();
+  const handleLogout = () => {
+    const confirmLogout = window.confirm("Do you really want to logout?");
+    if (confirmLogout) {
+      navigate('/');
+    }
   };
 
   return (
@@ -41,8 +53,8 @@ function Adminnav() {
             </LinkContainer>
           </Nav>
           <Nav className="ms-auto">
-            <Button href="src/component/FirstPage.js" variant="primary" className="ms-2">Logout</Button>
-          </Nav>
+        <Button onClick={handleLogout} variant="primary" className="ms-2">Logout</Button>
+      </Nav>
         </Navbar.Collapse>
       </Container>
     </Navbar>

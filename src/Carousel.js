@@ -3,7 +3,7 @@ import Carousel from 'react-bootstrap/Carousel';
 
 export function DarkVariantExample() {
     const carouselItemStyle = {
-      height: '400px', 
+      height: '500px', 
     };
   
     const imgStyle = {
@@ -17,38 +17,38 @@ export function DarkVariantExample() {
         <Carousel.Item style={carouselItemStyle}>
           <img
             className="d-block w-100"
-            src="./img.avif" // Relative path to the image
+            src="./home.jpg" // Relative path to the image
             alt="First slide"
             style={imgStyle}
           />
           <Carousel.Caption>
-            <h5>First slide label</h5>
-            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+          <h2>Welcome to our Service Center</h2>
+          <h4>Get hassle free and professional bike service, bike repair, wheel care services, cashless insurance claim and much more</h4>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item style={carouselItemStyle}>
           <img
             className="d-block w-100"
-            src="img2.jpeg" // Relative path to the image'
+            src="./img.avif" // Relative path to the image'
             
             alt="Second slide"
             style={imgStyle}
           />
           <Carousel.Caption>
-            <h5>Second slide label</h5>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <h2>Choose the workshop near you</h2>
+            <h4>Schedule a Pickup Today!</h4>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item style={carouselItemStyle}>
           <img
             className="d-block w-100"
-            src="./img3.webp" // Relative path to the image
+            src="./slide4.avif" // Relative path to the image
             alt="Third slide"
             style={imgStyle}
           />
           <Carousel.Caption>
-            <h5>Third slide label</h5>
-            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+          <h2>Select perfect bike Service</h2>
+            <h4>You will get multiple services</h4>
           </Carousel.Caption>
         </Carousel.Item>
       </Carousel>

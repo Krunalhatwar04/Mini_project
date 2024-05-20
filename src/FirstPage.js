@@ -84,8 +84,8 @@ function FirstPage() {
     <><AdminNavBar /><div className='container'>
       <div className='row'>
         <div className='col-md-12'>
-          <h5 className='mt-2'>User Data</h5>
-
+          <br></br>
+          <h4 className='mt-2' style={{textAlign:'center'}}>User Data</h4>
           {isLoading ? (
             <p>Loading...</p>
           ) : error ? (
