@@ -80,6 +80,8 @@ import axios from 'axios';
 import './ServiceCenters.css';
 import { SERVICE_CENTER_API_ROUTE } from './constrain/ApiConstrain';
 import { getServiceCenter } from './service/UserService';
+import AdminLogin from './AdminLogin';
+import Adminnav from './adminnav';
 
 export default function ServiceCenters() {
   const [serviceCenters, setServiceCenters] = useState([]);
@@ -104,16 +106,16 @@ export default function ServiceCenters() {
   };
 
   return (
-   
-    <Container className="mt-5">
+    <><Adminnav /><Container className="mt-5">
+
       <h2 className="text-center mb-4">Pune Service Centers</h2>
-      
+
       <Row>
-        
+
         {serviceCenters.map((center) => (
           <Col xs={12} md={6} lg={4} className="mb-4">
             <Card className="service-card" onClick={() => handleCardClick(center.id)}>
-              <Card.Img  src='./service5.avif' alt={center.name} className="service-card-img" />
+              <Card.Img src='./service5.avif' alt={center.name} className="service-card-img" />
               <Card.Body>
                 <Card.Title>{center.name}</Card.Title>
                 <Card.Text className="card-text">
@@ -126,6 +128,6 @@ export default function ServiceCenters() {
           </Col>
         ))}
       </Row>
-    </Container>
+    </Container></>
   );
 }

@@ -13,6 +13,10 @@ import Signup from './Signup'
 import Service from './Service'
 import ServiceCenters from './ServiceCenter';
 import FormExample from './Form';
+import FirstPage from './FirstPage';
+import CardPage from './CardPage';
+import AdminNavBar from './AdminNavBar';
+import BookingList from './BookingList';
 function App() {
   return (
     // <Router>
@@ -34,7 +38,7 @@ function App() {
     // </Router>
 
     <Router>
-      <NavBar />
+      {/* <NavBar /> */}
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/about" element={<AboutPage />} />
@@ -43,10 +47,13 @@ function App() {
         <Route path="/login/user" element={<LoginForm />} />
         <Route path="/login/user/signup" element={<Signup />} />
         <Route path="/login/admin" element={<AdminLogin />} />
-        <Route path="/register/service-center" element={<ServiceCenterRegister />} />
+        <Route path="/service-center" element={<ServiceCenterRegister />} />
         {/* Define the service page route without including it in the navbar */}
         <Route path="/services" element={<Service />} />
         <Route path="/servicesform" element={<FormExample />} />
+        <Route path="/FirstPage" element={<FirstPage />} />
+        <Route path="/AdminNavBar" element={<AdminNavBar />} />
+        <Route path="/viewbooking" element={<BookingList />} />
       </Routes>
     </Router>
   );
@@ -54,6 +61,7 @@ function App() {
 function AboutPage() {
   return (
     <>
+      <NavBar></NavBar>
       <About />
       <Footer />
     </>
@@ -63,6 +71,7 @@ function AboutPage() {
 function ContactPage() {
   return (
     <>
+    <NavBar></NavBar>
       <Contact />
       <Footer />
     </>
@@ -72,7 +81,10 @@ function ContactPage() {
 function HomePage() {
   return (
     <>
-    <DarkVariantExample/>
+    <NavBar></NavBar>
+    <DarkVariantExample />
+    <CardPage></CardPage>
+    <br/><br/><br/><br/>
       <Footer />
     </>
     
@@ -82,7 +94,6 @@ function LoginPage(){
   return (
     <>
     <LoginForm/>
-      <Footer />
     </>
     
   );

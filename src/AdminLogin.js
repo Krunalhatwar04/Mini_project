@@ -39,7 +39,7 @@ export default function AdminLogin() {
         try {
             const response = await adminlogin(formData);
             setMessage(response.data.message);
-            navigate('/about');
+            navigate('/AdminNavBar');
         } 
       
         

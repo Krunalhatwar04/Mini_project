@@ -4,9 +4,8 @@ import { LinkContainer } from 'react-router-bootstrap';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
 
-function NavBar() {
+function Adminnav() {
   const navbarStyle = {
     backgroundColor: 'grey',
   };
@@ -36,30 +35,13 @@ function NavBar() {
             <LinkContainer to="/about">
               <Nav.Link style={linkStyle}>About</Nav.Link>
             </LinkContainer>
+
             <LinkContainer to="/contact">
               <Nav.Link style={linkStyle}>Contact Us</Nav.Link>
             </LinkContainer>
-            {/* <LinkContainer to="/service-centers">
-            <Nav.Link>Service Centers</Nav.Link>
-          </LinkContainer> */}
           </Nav>
           <Nav className="ms-auto">
-            <NavDropdown
-              title={<span style={linkStyle}>Login</span>}
-              id="basic-nav-dropdown"
-              className="btn btn-primary"
-              style={dropdownToggleStyle}
-            >
-              <LinkContainer to="/login/user">
-                <NavDropdown.Item>User</NavDropdown.Item>
-              </LinkContainer>
-              <LinkContainer to="/login/admin">
-                <NavDropdown.Item>Admin</NavDropdown.Item>
-              </LinkContainer>
-             
-              <NavDropdown.Divider />
-            </NavDropdown>
-            <Button href="#" variant="primary" className="ms-2">Logout</Button>
+            <Button href="src/component/FirstPage.js" variant="primary" className="ms-2">Logout</Button>
           </Nav>
         </Navbar.Collapse>
       </Container>
@@ -67,8 +49,4 @@ function NavBar() {
   );
 }
 
-export default NavBar;
-
- {/* <LinkContainer to="/register/service-center">
-                <NavDropdown.Item>Service Center</NavDropdown.Item>
-              </LinkContainer> */}
+export default Adminnav;

@@ -5,6 +5,6 @@ export const REGISTER_API_ROUTE=`${API_BASE_URL}/users/signup`;
 export const LOGIN_API_ROUTE = `${API_BASE_URL}/users/login`;
 export const SERVICE_CENTER_API_ROUTE = `${API_BASE_URL}/servicecenters`;
 export const SERVICE_BOOKING_API_ROUTE = `${API_BASE_URL}/servicecenters/booking`;
-
 export const ADMIN_LOGIN=`${API_BASE_URL}/admin`
-
+export const GET_USER=`${API_BASE_URL}/users`
+export const UPDATE_USER=`${API_BASE_URL}/users/:id`

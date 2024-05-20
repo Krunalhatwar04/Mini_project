@@ -29,6 +29,7 @@ import { Container, Row, Col, Card, Form, Button, Alert } from 'react-bootstrap'
 import { Link } from 'react-router-dom';
 import { loginUser } from './service/UserService';
 import { FaHome } from 'react-icons/fa';
+import { useNavigate } from 'react-router-dom';
 // import './Login.css'; 
 // import './form.css'
 import Signup from './Signup';
@@ -41,6 +42,7 @@ export default function LoginForm() {
     const [errors, setErrors] = useState({});
     const [successMessage, setSuccessMessage] = useState('');
     const [errorMessage, setErrorMessage] = useState('');
+    const navigate = useNavigate(); 
 
     const handleChange = (e) => {
         const { name, value } = e.target;
@@ -70,6 +72,7 @@ export default function LoginForm() {
                 const response = await loginUser(formData);
                 setSuccessMessage(response.data.message);
                 setErrorMessage('');
+                navigate('/service-centers');
             } catch (error) {
                 if (error.response && error.response.data) {
                     setErrorMessage(error.response.data.message);
